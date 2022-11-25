@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+
+
+span.title01 {
+	font-size: 70px;
+	color:#00010D;
+	font-family: Arial;
+	font-weight: bold;
+}
+
+
+span.title02 {
+	font-size: 20px;
+	color:#1D1F1F;
+	font-family: Arial;
+	font-weight: normal;
+}
+
+span.title03 {
+	font-size: 40px;
+	color:#1D1F1F;
+	font-family: Arial;
+	font-weight: bold;
+}
+
+span.title04 {
+	font-size: 20px;
+	color:#FFFFFF;
+	font-family: Arial;
+	font-weight: bold;
+}
+
+td.skillbox {
+	background-color: #CCCCCC;
+	
+}
+
+td.picbox {
+	background-color: #1D1F1F;
+	text-align: center;
+	
+}
+
+
+td.titlebox {	
+	text-align: center;
+	
+}
+
+
+
+
+
+

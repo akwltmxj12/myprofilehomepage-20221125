@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+tr.contentbox {
+	height: 535px;
+	background-color: #CCCCCC;
+	
+}
+
+td.content {
+	font-family: Arial;
+	font-size: 20px;
+	font-weight: bold;
+	color: #475046;
+	text-align: center;
+	
+}
+
+span.content_text01 {
+	font-family: Arial;
+	font-size: 20px;
+	font-weight: bold;
+	color: #504F46;
+	
+	
+}
+
+
+input.input_type01 {
+	background-color: #ffffff; 
+	border: 1px solid #1D1F1F;	
+	width:  250;
+	font-family: Arial;
+	font-size: 20px;
+	color: #504F46;
+	padding: 5px;
+	
+}
+
+
+
+input.button_type01 {
+	background-color: #79786a; 
+	border: 1px solid #1D1F1F;	
+	width: 180px;
+	height: 40px;
+	font-family: Arial;
+	font-size: 20px;
+	font-weight: bold;
+	color: #FFFFFF;
+	padding: 5px;
+	cursor:pointer;
+	
+	
+}
+
+input.button_type01:hover {
+	background-color: #504F46;
+	border: 2px solid #ffffff;
+	width: 180px;
+	height: 40px;
+	font-family: malgun;
+	font-size: 20px;
+	color: #ffffff;
+	font-weight: bold;
+	padding: 5px;
+	cursor: pointer;
+}
+
+textarea.textarea_type01 {
+	background-color: #ffffff; 
+	border: 1px solid #1D1F1F;	
+	width:  250;
+	font-family: Arial;
+	font-size: 20px;
+	color: #504F46;
+	padding: 5px;
+	
+}
+
+
+
+

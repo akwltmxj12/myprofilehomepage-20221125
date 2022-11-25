@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+body {
+	margin: 0;
+	padding: 0;
+	
+}
+
+
+tr.footerline01 {
+	height: 70px;
+	
+}
+
+tr.footerline02 {
+	background-color: #1D1F1F;
+	height: 30px;
+	padding-top: 20px;
+}
+
+td.footerbox01 {
+	font-size: 16px; 
+	color: #FFFFFF;
+	font-family: Arial;
+	text-align: center;
+}
+
+
+td.footerbox02 {
+	font-size: 12px; 
+	color: #FFFFFF;
+	font-family: Arial;
+	text-align: center;
+	
+}
+
+
+
+
+

@@ -1,0 +1,76 @@
+/**
+ * 
+ */
+ 
+ 
+ 
+  function boardCheck() {
+	
+	if(document.board_frm.qname.value.length == 0) {
+		alert("이름은 필수 입력사항입니다.");
+		return;
+	}	
+	
+	if(document.board_frm.qname.value.length < 2) {
+		alert("이름은 2글자 이상이어야 합니다.");
+		return;
+	}
+	
+	if(document.board_frm.qname.value.length > 10) {
+		alert("이름은 10글자 미만이어야 합니다.");
+		return;
+	}
+	
+	
+	if(document.board_frm.qcontent.value.length < 10) {
+		alert("질문은은 10글자 이상이어야 합니다.");
+		return;
+	}	
+	
+	if(document.board_frm.qemail.value.length == 0) {
+		alert("이메일은 필수 입력사항입니다.");
+		return;
+	}		
+	
+	
+	
+	
+	document.board_frm.submit();
+}	
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+   
+   
+
+   <mapper namespace="pend.aurrius.home.dao.IDao">
+ 
+ 	<!-- 회원 관리 SQL -->
+ 	<!-- 회원가입 -->
+ 	<insert id="memberJoin">
+ 		INSERT INTO profile_member(mid, mpw, mname, memail) VALUES(#{param1}, #{param2}, #{param3}, #{param4}) 
+ 	</insert>
+
+	<!-- 아이디 체크 -->
+	<select id="checkId" resultType="int">
+		SELECT COUNT(*) FROM profile_member WHERE mid=#{param1}
+	</select>
+   
+   <!-- 아이디 및 비번 체크 -->
+   	<select id="checkIdAndPW" resultType="int">
+		SELECT COUNT(*) FROM profile_member WHERE mid=#{param1} AND mpw=#{param2}
+	</select>
+   
+   <!-- 아이디 조회 -->
+    <select id="getMemberInfo" resultType="pend.aurrius.home.dto.MemberDto">
+		SELECT * FROM profile_member WHERE mid=#{param1}
+	</select>
+   
+   <!-- 회원 정보 수정 -->
+   <update id="memberModify">
+   		UPDATE profile_member SET mpw=#{param2}, mname=#{param3}, memail=#{param4}  WHERE mid=#{param1}
+   </update>
+   
+   
+   <!-- 게시판 관련 SQL -->
+   
+   <!-- 질문하기 -->
+    <insert id="writeQuestion">
+ 		INSERT INTO profile_board(qnum, qid, qname, qcontent, qemail) VALUES(profile_seq.nextval, #{param1}, #{param2}, #{param3}, #{param4}) 
+ 	</insert>
+   
+   
+   <!-- 게시판 리스트 가져오기 -->
+   <select id="questionList" resultType="pend.aurrius.home.dto.QBoardDto">
+   		SELECT * FROM profile_board ORDER BY qnum DESC 
+   </select>
+   
+   <select id="questionView" resultType="pend.aurrius.home.dto.QBoardDto">
+   		SELECT * FROM profile_board WHERE qnum=#{param1}
+   </select>
+   
+   
+   <update id="questionModify">
+   		UPDATE profile_board SET qname=#{param2}, qcontent=#{param3}, qemail=#{param4} WHERE qnum=#{param1}
+   </update>
+   
+   <delete id="questionDelete">
+   		DELETE FROM profile_board WHERE qnum=#{param1}
+   </delete>
+   
+   
+   </mapper>
